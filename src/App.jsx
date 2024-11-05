@@ -1,5 +1,6 @@
 import GeneralInfo from './components/GeneralInfo';
 import ProjectHeading from './components/ProjectHeading';
+import CvPreview from './components/CvPreview';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
           <GeneralInfo />
         </aside>
         <main className="flex items-center justify-center col-span-12 lg:col-span-7 h-full">
+          <CvPreview />
         </main>
       </div>
     </div>
