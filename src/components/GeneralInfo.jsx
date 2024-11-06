@@ -3,7 +3,7 @@ import FormHeading from './FormHeading';
 export default function GeneralInfo({ generalInfo, onChange }) {
   const { name, jobtitle, email, phone } = generalInfo;
   return (
-    <div>
+    <div className="mb-8">
       <FormHeading text={'General information'} />
       <form action="">
         <label htmlFor="name" className="block">

@@ -1,5 +1,6 @@
 import GeneralInfo from './components/GeneralInfo';
 import ProjectHeading from './components/ProjectHeading';
+import PersonalProfile from './components/PersonalProfile';
 import CvPreview from './components/CvPreview';
 import { useState } from 'react';
 
@@ -25,6 +26,7 @@ export default function App() {
         <aside className="col-span-12 lg:col-span-5 w-5/6 bg-blue-300 shadow-md px-16 py-8">
           <ProjectHeading text={'CV Generator'} />
           <GeneralInfo generalInfo={generalInfo} onChange={handleGeneralInfoChange} />
+          <PersonalProfile />
         </aside>
         <main className="flex items-center justify-center col-span-12 lg:col-span-7 h-full">
           <CvPreview generalInfo={generalInfo} />
