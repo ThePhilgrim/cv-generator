@@ -1,6 +1,8 @@
 import FormHeading from './FormHeading';
 
-export default function PersonalProfile() {
+export default function PersonalProfile({ text, onChange }) {
+  const textCharCount = text.length;
+
   return (
     <div>
       <FormHeading text={'Personal Profile'} />
@@ -12,9 +14,11 @@ export default function PersonalProfile() {
           rows="5"
           maxLength={350}
           className="w-full"
+          value={text}
+          onChange={onChange}
         ></textarea>
       </form>
-      <span className="text-xs float-end">0/350 characters</span>
+      <span className="text-xs float-end">{textCharCount}/350 characters</span>
     </div>
   );
 }
