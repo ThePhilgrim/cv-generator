@@ -1,5 +1,6 @@
 import GeneralPreview from './GeneralPreview';
 import PersonalProfilePreview from './PersonalProfilePreview';
+import WorkExperiencePreview from './WorkExperiencePreview';
 
 export default function CvPreview({ generalInfo, personalProfile }) {
   console.log(personalProfile);
@@ -8,8 +9,11 @@ export default function CvPreview({ generalInfo, personalProfile }) {
       <div className="bg-blue-100 py-8 general-preview mb-8">
         <GeneralPreview generalInfo={generalInfo} />
       </div>
-      <div className="personal-profile px-12">
+      <div className="personal-profile px-12 mb-8">
         <PersonalProfilePreview personalProfile={personalProfile} />
+      </div>
+      <div className="work-experience px-12 mb-8">
+        <WorkExperiencePreview />
       </div>
     </div>
   );
