@@ -2,8 +2,7 @@ import GeneralPreview from './GeneralPreview';
 import PersonalProfilePreview from './PersonalProfilePreview';
 import WorkExperiencePreview from './WorkExperiencePreview';
 
-export default function CvPreview({ generalInfo, personalProfile }) {
-  console.log(personalProfile);
+export default function CvPreview({ generalInfo, personalProfile, workExperience }) {
   return (
     <div className="bg-gray-50 shadow-md h-full w-full max-w-full mx-32">
       <div className="bg-blue-100 py-8 general-preview mb-8">
@@ -13,7 +12,7 @@ export default function CvPreview({ generalInfo, personalProfile }) {
         <PersonalProfilePreview personalProfile={personalProfile} />
       </div>
       <div className="work-experience px-12 mb-8">
-        <WorkExperiencePreview />
+        <WorkExperiencePreview workExperience={workExperience} />
       </div>
     </div>
   );
