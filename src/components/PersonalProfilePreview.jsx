@@ -1,5 +1,4 @@
 export default function PersonalProfilePreview({ personalProfile }) {
-  console.log(personalProfile);
   return (
     <>
       <div className="bg-blue-100 px-4 mb-4">

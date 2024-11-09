@@ -4,7 +4,7 @@ export default function PersonalProfile({ text, onChange }) {
   const textCharCount = text.length;
 
   return (
-    <div>
+    <div className="mb-8">
       <FormHeading text={'Personal Profile'} />
       <form action="">
         <textarea
