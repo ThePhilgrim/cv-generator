@@ -6,6 +6,9 @@ import CvPreview from './components/CvPreview';
 import { useState } from 'react';
 import FormHeading from './components/FormHeading';
 
+// CONSTANTS
+export const MAX_WORK_EXPERIENCE_ITEMS = 3;
+
 export default function App() {
   const [generalInfo, setGeneralInfo] = useState({
     name: '',
@@ -64,8 +67,9 @@ export default function App() {
                 key={item.id}
                 id={item.id}
                 info={item.info}
-                itemNo={index + 1}
+                index={index}
                 isOpen={index === workIsOpenIndex ? true : false}
+                openForm={setWorkIsOpenIndex}
               />
             ))}
           </div>
